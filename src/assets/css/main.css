@@ -1,0 +1,181 @@
+.navbar {
+    margin-bottom: 0 !important;
+    background-color: #FFF;
+}
+
+.container {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.single-complaint {
+    margin-bottom: 20px;
+}
+
+/**** CARD LAYOUTS *****/
+
+.card {
+    padding: 15px 15px 0 15px;
+}
+
+.card__footer {
+    border-top: 1px solid rgba(117, 122, 150, 0.27);
+    padding: 10px 10px 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.card__footer ul {
+    padding-left: 0;
+}
+
+.card__footer ul li {
+    display: inline;
+    text-transform: uppercase;
+    /*padding: 10px;*/
+    font-size: 12px;
+}
+
+.card__footer-item {
+    padding: 0 10px;
+}
+
+.card__footer-first {
+    padding: 0 10px 0 0;
+}
+
+.card__footer-last {
+    padding: 0 10px;
+}
+.card__footer a {
+    padding: 
+    text-transform: uppercase;
+}
+
+.card__complaint-text {
+    margin-bottom: 15px;
+}
+
+.mini-banner {
+    padding: 30px;
+    background-color: grey;
+    box-sizing: border-box;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+.btn_recommend {
+    padding: 0.5em 50px;
+    height: 3.3em;
+
+}
+
+@media screen and (min-width: 850px) {
+  .feed {
+    width: 50%;
+  }
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(117, 122, 150, 0.27);
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card__header {
+  padding: 15px;
+  border-bottom: 1px solid #EDEEEE;
+}
+
+.card__title {
+  text-transform: uppercase;
+  color: #757997;
+}
+
+.card__body {
+  padding: 15px;
+}
+
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1%;
+}
+
+.input__ask {
+    padding: 3px;
+    width: 100%;
+}
+
+
+.flexgrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (min-width: 850px) {
+  .flexgrid .banner-left {
+    order: 1;
+  }
+  .flexgrid .banner {
+    order: 2;
+    flex-grow: 0.2;
+  }
+  .flexgrid .banner-right {
+    order: 3;
+  }
+}
+
+.singlegrid {
+  width: 95%;
+  max-width: 400px;
+  min-height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/*** SIDEBAR ***/
+
+.sidebar__card {
+    padding: 15px;
+}
+
+.sidebar__user_single {
+    padding: 10px 0;
+}
+
+.sidebar__title {
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(117, 122, 150, 0.27);
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.sidebar__complaint_name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sidebar__complaint_title {
+    font-weight: normal;
+    font-size: 13px;
+    color: #AAAAAA;
+}
