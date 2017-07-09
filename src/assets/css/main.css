@@ -12,10 +12,16 @@
     margin-bottom: 20px;
 }
 
+.site__logo {
+    width: 125px;
+    height: 30px;
+}
+
 /**** CARD LAYOUTS *****/
 
 .card {
     padding: 15px 15px 0 15px;
+    /*box-shadow: 0 0 15px 0 rgba(117, 122, 150, 0.27);*/
 }
 
 .card__footer {
@@ -68,9 +74,9 @@
 
 
 .btn_recommend {
-    padding: 0.5em 50px;
-    height: 3.3em;
-
+    /*padding: 0.5em;*/
+    text-transform: uppercase;
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 850px) {
@@ -110,7 +116,7 @@
   margin-top: 1%;
 }
 
-.input__ask {
+.input__search {
     padding: 3px;
     width: 100%;
 }
@@ -178,4 +184,39 @@
     font-weight: normal;
     font-size: 13px;
     color: #AAAAAA;
+}
+
+
+.sidebar__flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+
+/*** VOICE LAYOUT ***/
+
+.voice__title {
+    text-transform: uppercase;
+    font-size: 15px;
+    /*padding-bottom: 15px;
+    margin-bottom: 10px;*/
+}
+
+.voice__card {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/*.voice__form input, textarea {
+    padding: 20px;
+}*/
+
+.voice__form .input_title {
+    padding: 20px;
+    font-size: 18px;
 }

@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="row">
+      <div class="card voice__card">
+        <div class="card-block">
+            <div class="row voice__title">
+              <div class="col-md-4">ask myvoice</div>
+              <div class="col-md-4 col-md-offset-4" style="text-align: right">voice your complaint</div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="row">
+      <div class="card voice__card">
+        <div class="card-block">
+            <form class="form-horizontal voice__form">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Complaint</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control input_title" id="inputEmail3" placeholder="Give a title to your complaint. E.g We do not have a transformer in Mushin.">
+                  <p class="help-block">Required</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="3" placeholder="Explain briefly the nature of your complaint. E.g I live in Kojola street in Mushin..."></textarea>
+                  <p class="help-block">Required</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Evidence</label>
+                <div class="col-sm-10">
+                  <input type="file" id="inputEmail3" placeholder="Attach evidence">
+                  <p class="help-block">Optional</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">CONTINUE</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+  </div>
+
+</div> <!-- end container -->
