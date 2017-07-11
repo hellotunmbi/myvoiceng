@@ -63,6 +63,8 @@
     margin-bottom: 15px;
 }
 
+/*** MINI BANNER ***/
+
 .mini-banner {
     padding: 50px;
     background-color: rgb(255,109, 0);
@@ -71,6 +73,21 @@
     margin-bottom: 20px;
 }
 
+.minibanner__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.minibanner__title {
+
+}
+
+.minibanner__ask-button .btn_recommend {
+    padding: 10px 30px;
+}
 
 
 .btn_recommend {
@@ -231,4 +248,41 @@
 .voice__form .input_title {
     padding: 20px;
     font-size: 18px;
+}
+
+.voice__ask-text {
+    color: rgb(255,109, 0)
+}
+
+
+/*** LOGIN LAYOUT ***/
+
+.login__page {
+    margin-top: 25px;
+    vertical-align: middle;
+}
+
+.login__socialsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.login__social-holder {
+    max-width: 50%;
+}
+
+
+.login__userform {
+    border-left: 1px solid rgb(255, 109, 0);
+}
+
+.login__social-login-btn {
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
