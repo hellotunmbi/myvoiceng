@@ -64,8 +64,8 @@
 }
 
 .mini-banner {
-    padding: 30px;
-    background-color: grey;
+    padding: 50px;
+    background-color: rgb(255,109, 0);
     box-sizing: border-box;
     color: #fff;
     margin-bottom: 20px;
@@ -163,9 +163,7 @@
     padding: 15px;
 }
 
-.sidebar__user_single {
-    padding: 10px 0;
-}
+
 
 .sidebar__title {
     text-transform: uppercase;
@@ -197,6 +195,20 @@
     height: 100%;
 }
 
+.sidebar__user_single {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    height: 100%;
+   margin-bottom: 20px;
+}
+
+.sidebar__user_thumbnail {
+    margin-right: 10px;
+}
 
 /*** VOICE LAYOUT ***/
 
