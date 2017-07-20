@@ -284,10 +284,18 @@
     border-left: 1px dotted rgba(255, 109, 0, 0.75);
 }
 
-.login__social-login-btn {
-    margin: 20px;
+.login__twitter-login-btn {
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #0084b4;
+    color: #FFF;
+}
+
+.login__facebook-login-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3b5998;
+    color: #FFF;
 }
 
 .login__input {
@@ -336,4 +344,60 @@
     border-bottom: 1px solid rgba(117, 122, 150, 0.27);
     padding-bottom: 10px;
     margin-bottom: 20px;
+}
+
+
+.profile .minibanner__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.profile__mini-banner {
+    padding: 20px;
+    background-color: rgb(255,109, 0);
+    box-sizing: border-box;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.profile__banner_name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.profile__banner_title {
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/*** FEEDS SITE ***/
+
+.feeds__site {
+    margin-top: 30px;
+}
+
+.feeds__list ul {
+    list-style: none;
+}
+
+.feeds__list ul li {
+    text-transform: uppercase;
+    line-height: 30px;
+    color: rgba(255, 109, 0, 0.75);
+    font-size: 14px;
+    
+}
+
+.feeds__list ul li:active {
+    font-weight: bold;
+
+}
+
+. feeds__list-icons {
+    display: inline-block;
 }

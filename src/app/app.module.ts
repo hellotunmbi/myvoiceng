@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Angular2TokenService } from 'angular2-token';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRouting } from "./app.routing";
+
+import { AuthService } from "./services/auth.service";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './modules/header/header.component';
@@ -26,10 +31,15 @@ import { FeedsComponent } from './views/feeds/feeds.component';
     FeedsComponent
   ],
   imports: [
+    HttpModule,
     BrowserModule,
-    AppRouting
+    AppRouting,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    Angular2TokenService, 
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
