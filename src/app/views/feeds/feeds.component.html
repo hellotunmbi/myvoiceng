@@ -1,3 +1,30 @@
-<p>
-  feeds works!
-</p>
+
+<app-header></app-header>
+
+
+<div class="container feeds__site">
+
+    <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-md-3 sidebar-offcanvas">
+            <aside class="">
+                <div class="feeds__list">
+                  <ul>
+                    <li class="feeds__list-icons"><i class="fa fa-home fa-1x pull-left" aria-hidden="true"></i><span>home</span></li>
+                    <li class="feeds__list-icons">power</li>
+                    <li class="feeds__list-icons">health</li>
+                    <li class="feeds__list-icons">burning issues</li>
+                  </ul>
+                </div>
+            </aside>
+        </div>
+
+        <div class="col-md-9">
+            <section>
+                <app-complaints></app-complaints>
+            </section>
+        </div>
+    </div>
+       
+    
+</div>
+
