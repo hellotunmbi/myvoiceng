@@ -1,12 +1,24 @@
-<div class="row single-complaint">
+<div  *ngFor="let complaint of complaints" class="row single-complaint">
   <div class="col-sm-12">
     <div class="card">
       <div class="card-block">
-        <h3 class="card-title">No light in our area for over 2years</h3>
-        <p class="card-text card__complaint-text">Its so pathetic that NEPA too away our transformer for over 2 years now with the promise of bringing it back. Up till now, we havent seen sign of a new one</p>
+        <app-rant [complaint]="complaint"></app-rant>
+        <!--{{ complaint | json}} -->
+        <!--hello-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<div class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Tax Fraud for 12 years</h3>
+        <p class="card-text card__complaint-text">My tax account has been overrated, i found this out when i hired a reliable tax accountant to for the first time look into my tax history only to discover that i have been over paying for 12 yrs</p>
         <div class="card__footer">
           <ul>
-            <li class="card__footer-first"><a href="#">recommend</a></li>
+            <li class="card__footer-first"><a href="#">upvote</a></li>
             <li class="card__footer-item"><a href="#">follow</a></li>
             <li class="card__footer-last"><a href="#">share</a></li>
           </ul>
@@ -25,7 +37,7 @@
         <p class="card-text card__complaint-text">My tax account has been overrated, i found this out when i hired a reliable tax accountant to for the first time look into my tax history only to discover that i have been over paying for 12 yrs</p>
         <div class="card__footer">
           <ul>
-            <li class="card__footer-first"><a href="#">recommend</a></li>
+            <li class="card__footer-first"><a href="#">upvote</a></li>
             <li class="card__footer-item"><a href="#">follow</a></li>
             <li class="card__footer-last"><a href="#">share</a></li>
           </ul>
@@ -34,4 +46,4 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
