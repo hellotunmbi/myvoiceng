@@ -20,8 +20,8 @@ export class AuthService {
     domain: 'hellotunmbi.auth0.com',
     responseType: 'token id_token',
     audience: 'https://hellotunmbi.auth0.com/userinfo',
-   // redirectUri: 'https://my-voice-ng.firebaseapp.com/voice', 
-   redirectUri: 'http://localhost:4200/voice',      
+    redirectUri: 'https://my-voice-ng.firebaseapp.com/voice', 
+   // redirectUri: 'http://localhost:4200/voice',      
     scope: 'openid'
   });
 
