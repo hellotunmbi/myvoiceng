@@ -281,7 +281,7 @@
 
 
 .login__userform {
-    border-left: 1px dotted rgba(255, 109, 0, 0.75);
+   /*  border-left: 1px dotted rgba(255, 109, 0, 0.75); */
 }
 
 .login__twitter-login-btn {

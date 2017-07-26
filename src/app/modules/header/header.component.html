@@ -8,11 +8,15 @@
         </a>
       </aside>
 
-      <aside class="banner-right">
+
+      <aside class="banner-right" *ngIf="authService.isAuthenticated()">
         <a class="" href="/profile">
           <img src="http://placehold.it/30x30" class="img-circle" alt="">
         </a>
+        <a (click)="authService.logout()">Logout</a>
       </aside>
+
+      <a class="banner-right" *ngIf="!authService.isAuthenticated()" href="login">Log In</a>
 
       <!--<section class="banner">
         <input class="input__search" type="text" name="search" placeholder="Search for a discussion">

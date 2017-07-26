@@ -25,6 +25,11 @@ export class LoginComponent implements OnInit {
       })
   }
 
+
+  loginWithTwitter() {
+    this.authService.login();
+  }
+
   ngOnInit() {
   }
 
