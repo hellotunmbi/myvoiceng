@@ -24,7 +24,7 @@ export class ComplaintsService {
   postMyRant(voice: any) {
     return new Promise((resolve, reject) => {
       this._tokenService.post('complaints', voice)
-      .map((res: any) => res.json()['data'])
+      .map((res: any) => res.json())
       .subscribe( res => resolve(res), error => reject(error))
     }); 
   }

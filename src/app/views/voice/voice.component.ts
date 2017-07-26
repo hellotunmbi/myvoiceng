@@ -15,7 +15,7 @@ export class VoiceComponent implements OnInit {
   voice = {};
   errors = {};
 
-  result = {};
+  result: {};
 
   constructor(
     private complaintsService: ComplaintsService,
@@ -40,8 +40,9 @@ export class VoiceComponent implements OnInit {
   postRant(voice) {
    // console.log(voice);
     this.complaintsService.postMyRant(voice)
-    .then((res) => {
-        this.result = res
+    .then((res: any) => {
+        this.result = res;
+        //console.log(this.result);
         // this.router.navigate(['/'])
       })
     .catch((errors: any) => this.errors = errors);
@@ -49,7 +50,8 @@ export class VoiceComponent implements OnInit {
 
 
   ngOnInit() {
-
+    this.result = {};
+    this.errors = {};
   }
 
 }
