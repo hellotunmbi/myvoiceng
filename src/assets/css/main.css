@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Mono');
+
+body {
+    font-family: 'Lato', monospace;
+}
+
+
+
 .navbar {
     margin-bottom: 0 !important;
     background-color: #FFF;
@@ -17,10 +25,20 @@
     height: 30px;
 }
 
+
+.main__body {
+    background-color: #fafafa;
+    padding-top: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
 /**** CARD LAYOUTS *****/
 
 .card {
-    padding: 15px 15px 0 15px;
+    padding: 0;
     /*box-shadow: 0 0 15px 0 rgba(117, 122, 150, 0.27);*/
 }
 
@@ -55,7 +73,6 @@
     padding: 0 10px;
 }
 .card__footer a {
-    padding: 
     text-transform: uppercase;
 }
 
@@ -63,14 +80,30 @@
     margin-bottom: 15px;
 }
 
+
+
+
+/***   RANT ***/
+.rant_title {
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.rant_body {
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
 /*** MINI BANNER ***/
 
 .mini-banner {
-    padding: 50px;
-    background-color: rgb(255,109, 0);
+    padding: 50px 0;
+    /*background-color: rgb(255,109, 0);*/
     box-sizing: border-box;
     color: #fff;
-    margin-bottom: 20px;
+    height: 400px;
+    background-size: cover;
+    background-image: url("http://res.cloudinary.com/domymi7op/image/upload/e_blur:50/myVoice-Background2_qgftna.jpg");
 }
 
 .minibanner__content {
@@ -79,6 +112,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    margin-top: 10%;
 }
 
 .minibanner__title {
@@ -87,6 +121,7 @@
 
 .minibanner__ask-button .btn_recommend {
     padding: 10px 30px;
+    width: 100%;
 }
 
 
@@ -104,10 +139,11 @@
 
 .card {
   background-color: #fff;
-  box-shadow: 0 0 4px 0 rgba(117, 122, 150, 0.27);
-  border-radius: 4px;
+  /*box-shadow: 0 0 2px 0 rgba(151, 151, 151, 0.28);*/
+  border-radius: 2px;
   width: 100%;
   margin-bottom: 20px;
+  border: 1px solid rgba(151, 151, 151, 0.20)
 }
 
 .card__header {
@@ -177,7 +213,7 @@
 /*** SIDEBAR ***/
 
 .sidebar__card {
-    padding: 15px;
+    padding: 0.1px 15px;
 }
 
 
@@ -238,7 +274,7 @@
 
 .voice__card {
     padding: 20px;
-    margin: 20px 0;
+    /*margin: 20px 0;*/
 }
 
 /*.voice__form input, textarea {
@@ -281,7 +317,7 @@
 
 
 .login__userform {
-    border-left: 1px dotted rgba(255, 109, 0, 0.75);
+   /*  border-left: 1px dotted rgba(255, 109, 0, 0.75); */
 }
 
 .login__twitter-login-btn {
@@ -400,4 +436,15 @@
 
 . feeds__list-icons {
     display: inline-block;
+}
+
+
+
+
+
+
+/*** OTHERS ***/
+.h_padding_15 {
+    padding-left: 15px;
+    padding-right: 15px;
 }

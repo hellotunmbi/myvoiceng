@@ -21,10 +21,12 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "auth0-js": "^8.8.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "express": "^4.15.3",
     "font-awesome": "^4.7.0",
+    "ng2-pagination": "^2.0.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
@@ -48,5 +50,6 @@
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
-  }
+  },
+  "optionalDependencies": {}
 }

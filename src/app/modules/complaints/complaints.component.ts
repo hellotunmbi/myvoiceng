@@ -11,6 +11,7 @@ import { RantComponent } from "../rant/rant.component";
 export class ComplaintsComponent implements OnInit {
 
   complaints: any[];
+  errors: any[];
 
   constructor(
     private complaintsService: ComplaintsService
@@ -18,18 +19,15 @@ export class ComplaintsComponent implements OnInit {
 
     
   getComplaints() {
-    this.complaintsService.getAllComplaints().then((complaints: any[]) => this.complaints = complaints);
+    this.complaintsService.getAllComplaints()
+    .then((complaints: any[]) => this.complaints = complaints)
+    .catch((errors: any) => this.errors = errors);
   }
 
-  // loadUser() {
-  //   this.complaintsService.getUser().subscribe(data => this.complaints = data);
-  // }
 
   ngOnInit() {
     this.complaints = [];
-    console.log(this.getComplaints());
-
-
+    this.getComplaints();
 
   }
 

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {Angular2TokenService} from "angular2-token/angular2-token";
 
+import { AuthService } from "./services/auth.service";
+
 
 @Component({
   selector: 'app-root',
@@ -12,8 +14,11 @@ import {Angular2TokenService} from "angular2-token/angular2-token";
 export class AppComponent {
 
   constructor(
-    private _tokenService: Angular2TokenService
+    private _tokenService: Angular2TokenService,
+    public auth: AuthService
   ) {
+
+    auth.handleAuthentication();
 
     this._tokenService.init({
       apiBase: 'https://myvoice-ng.herokuapp.com',
@@ -31,4 +36,6 @@ export class AppComponent {
       }
     });
   }
+
+  
 }

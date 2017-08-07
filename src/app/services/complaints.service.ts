@@ -6,6 +6,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class ComplaintsService {
 
+
   constructor(
      private _tokenService: Angular2TokenService
   ) { }
@@ -18,6 +19,15 @@ export class ComplaintsService {
       .subscribe( res => resolve(res), error => reject(error))
     }); 
   };
+
+
+  postMyRant(voice: any) {
+    return new Promise((resolve, reject) => {
+      this._tokenService.post('complaints', voice)
+      .map((res: any) => res.json())
+      .subscribe( res => resolve(res), error => reject(error))
+    }); 
+  }
 
 
 
