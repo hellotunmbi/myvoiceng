@@ -1,10 +1,27 @@
-<h3 class="card-title">{{ complaint.title }}</h3>
-<p class="card-text card__complaint-text">{{ complaint.body }}</p>
+ <div class="h_padding_15">
+  <h3 class="card-title rant_title">{{ complaint.title }}</h3>
+  <p class="card-text card__complaint-text rant_body">{{ complaint.body }}</p>
+
+  <div class="card-text sidebar__user_single">
+    <div class="sidebar__user_thumbnail">
+        <img src="http://placehold.it/40x40" class="img-circle" alt="">
+    </div>
+    <div class="sidebar__user_details">
+      <div class="sidebar__complaint_name">Michael Agbabiaka</div>
+      <div class="sidebar__complaint_title">Student, Yaba Tech.</div>
+    </div>
+  </div>
+ </div>
+  
+
 <div class="card__footer">
-  <ul>
-    <li class="card__footer-first"><a href="#">upvote</a></li>
-    <li class="card__footer-item"><a href="#">follow</a></li>
-    <li class="card__footer-last"><a href="#">share</a></li>
-  </ul>
+  <div class="h_padding_15">
+    <ul>
+      <li class="card__footer-first"><a href="#">upvote</a></li>
+      <li class="card__footer-item"><a href="#">comment</a></li>
+      <li class="card__footer-last"><a href="#">share</a></li>
+    </ul>
+  </div>
+  
 </div>
         

@@ -16,7 +16,7 @@
         <a (click)="authService.logout()">Logout</a>
       </aside>
 
-      <a class="banner-right" *ngIf="!authService.isAuthenticated()" href="login">Log In</a>
+      <a class="btn btn-default banner-right" *ngIf="!authService.isAuthenticated()" href="login">Log In</a>
 
       <!--<section class="banner">
         <input class="input__search" type="text" name="search" placeholder="Search for a discussion">
