@@ -9,14 +9,14 @@
       </aside>
 
 
-      <aside class="banner-right" *ngIf="authService.isAuthenticated()">
+      <aside class="banner-right" *ngIf="authService.isLoggedIn()">
         <a class="" href="/profile">
-          <img src="https://placehold.it/30x30" class="img-circle" alt="">
+          <img src="{{ authService.currentUser.photoURL }}" width="35px" height="35px" class="img-circle" alt="">
         </a>
-        <a (click)="authService.logout()">Logout</a>
+        {{ authService.currentUser.displayName }} [ <a href="#" (click)="authService.logout()">Logout</a> ]
       </aside>
 
-      <div class="banner-right" *ngIf="!authService.isAuthenticated()">
+      <div class="banner-right" *ngIf="!authService.isLoggedIn()">
         <a class="btn btn-default"  href="login">Sign Up</a>
       <a class="btn btn-default" href="login">Log In</a>
       </div>

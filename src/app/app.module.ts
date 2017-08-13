@@ -20,6 +20,11 @@ import { ProfileComponent } from './views/profile/profile.component';
 import { FeedsComponent } from './views/feeds/feeds.component';
 import { RantComponent } from './modules/rant/rant.component';
 
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +42,10 @@ import { RantComponent } from './modules/rant/rant.component';
     HttpModule,
     BrowserModule,
     AppRouting,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'my-voice-ng'),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [
     Angular2TokenService, 

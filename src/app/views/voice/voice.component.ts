@@ -19,39 +19,12 @@ export class VoiceComponent implements OnInit {
 
   constructor(
     private complaintsService: ComplaintsService,
-    public authService: AuthService,
     private router: Router
   ) { }
 
 
-  postComplaint() {
-
-    if(this.authService.isAuthenticated()) {
-        this.postRant(this.voice);
-    }
-    else {
-        //ask me to login
-        this.router.navigate(['login']);
-        //post my rant
-    }
-
-  }
-
-  postRant(voice) {
-   // console.log(voice);
-    this.complaintsService.postMyRant(voice)
-    .then((res: any) => {
-        this.result = res;
-        //console.log(this.result);
-        // this.router.navigate(['/'])
-      })
-    .catch((errors: any) => this.errors = errors);
-  }
 
 
-  ngOnInit() {
-    this.result = {};
-    this.errors = {};
-  }
+  ngOnInit() {  }
 
 }

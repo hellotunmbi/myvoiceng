@@ -9,28 +9,39 @@ import { Router } from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  user = {};
+  user = null;
 
   constructor(
     private authService: AuthService,
     private router: Router
   ) { }
 
-  registerUser() {
-    console.log(this.user);
-    this.authService.register(this.user)
-      .then((res) => this.router.navigate(['/']))
-      .catch((err) => {
-        console.log("error", err);
-      })
-  }
-
 
   loginWithTwitter() {
-    this.authService.login();
+    this.authService.loginWithTwitter()
+    .then((res) => { 
+        this.router.navigate(['/'])
+      });
+  }
+
+  loginWithFacebook() {
+    this.authService.loginWithFacebook()
+    .then((res) => { 
+        this.router.navigate(['/'])
+      });;
   }
 
   ngOnInit() {
+    this.authService.getAuthState().subscribe(
+      (user) => this.user = user
+    );
   }
+
+
+  isLoggedIn() {
+    return this.authService.isLoggedIn();
+  }
+
+
 
 }

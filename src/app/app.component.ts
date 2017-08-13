@@ -18,7 +18,6 @@ export class AppComponent {
     public auth: AuthService
   ) {
 
-    auth.handleAuthentication();
 
     this._tokenService.init({
       apiBase: 'https://myvoice-ng.herokuapp.com',

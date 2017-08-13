@@ -103,7 +103,7 @@ body {
     color: #fff;
     height: 400px;
     background-size: cover;
-    background-image: url("http://res.cloudinary.com/domymi7op/image/upload/e_blur:50/myVoice-Background2_qgftna.jpg");
+    background-image: url("http://res.cloudinary.com/domymi7op/image/upload/e_blur:150/myVoice-Background2_qgftna.jpg");
 }
 
 .minibanner__content {
@@ -116,7 +116,16 @@ body {
 }
 
 .minibanner__title {
+    font-weight: normal;
+}
 
+.minibanner__title h2 {
+    font-size: 40px;
+    /*color: #AB2346;*/
+}
+
+.minibanner__title h5 {
+    font-size: 18px;
 }
 
 .minibanner__ask-button .btn_recommend {
@@ -434,7 +443,7 @@ body {
 
 }
 
-. feeds__list-icons {
+.feeds__list-icons {
     display: inline-block;
 }
 
