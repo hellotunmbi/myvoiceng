@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ComplaintsService } from "../../services/complaints.service";
-import { RantComponent } from "../rant/rant.component";
+import { ComplaintsService } from '../../services/complaints.service';
+import { RantComponent } from '../rant/rant.component';
 
 @Component({
   selector: 'app-complaints',
@@ -17,7 +17,6 @@ export class ComplaintsComponent implements OnInit {
     private complaintsService: ComplaintsService
   ) { }
 
-    
   getComplaints() {
     this.complaintsService.getAllComplaints()
     .then((complaints: any[]) => this.complaints = complaints)

@@ -20,15 +20,15 @@ export class LoginComponent implements OnInit {
   loginWithTwitter() {
     this.authService.loginWithTwitter()
     .then((res) => { 
-        this.router.navigate(['/'])
+        this.router.navigate(['voice'])
       });
   }
 
   loginWithFacebook() {
     this.authService.loginWithFacebook()
     .then((res) => { 
-        this.router.navigate(['/'])
-      });;
+        this.router.navigate(['voice'])
+      });
   }
 
   ngOnInit() {

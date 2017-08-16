@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Angular2TokenService} from "angular2-token/angular2-token";
+import {Angular2TokenService} from 'angular2-token/angular2-token';
 
 import 'rxjs/add/operator/map';
 
@@ -17,7 +17,7 @@ export class ComplaintsService {
       this._tokenService.get('complaints')
       .map((res: any) => res.json()['data'])
       .subscribe( res => resolve(res), error => reject(error))
-    }); 
+    });
   };
 
 
@@ -26,7 +26,7 @@ export class ComplaintsService {
       this._tokenService.post('complaints', voice)
       .map((res: any) => res.json())
       .subscribe( res => resolve(res), error => reject(error))
-    }); 
+    });
   }
 
 
