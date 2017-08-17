@@ -48,6 +48,7 @@ export class VoiceComponent implements OnInit {
         this.complaintsService.postMyRant(voice)
         .then((res) => {
             this.result = res;
+            console.log(this.result);
             this.voice = {};
             localStorage.removeItem('current_complaint');
             this.router.navigate(['voice']);
