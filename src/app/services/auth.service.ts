@@ -43,7 +43,6 @@ export class AuthService {
       )
     }
 
-    
     loginWithFacebook() {
       return this.afAuth.auth.signInWithPopup(
         new firebase.auth.FacebookAuthProvider()
@@ -51,7 +50,7 @@ export class AuthService {
     }
 
     isLoggedIn() {
-      if(this.currentUser == null ) {
+      if (this.currentUser == null ) {
         return false;
       } else {
         return true;

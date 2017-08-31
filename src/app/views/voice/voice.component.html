@@ -20,14 +20,14 @@
             <form class="form-horizontal voice__form" (submit)="postComplaint()">
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Complaint Title</label>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <input type="text" class="form-control input_title" id="inputEmail3" name="title" [(ngModel)]="voice.title" placeholder="Give a title to your complaint. E.g We do not have a transformer in Mushin.">
                   <p class="help-block">Required</p>
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-                <div class="col-sm-10">
+                <div class="col-sm-8">
                   <textarea class="form-control" rows="3" name="body" [(ngModel)]="voice.body" placeholder="Explain briefly the nature of your complaint. E.g I live in Kojola street in Mushin..."></textarea>
                   <p class="help-block">Required</p>
                 </div>

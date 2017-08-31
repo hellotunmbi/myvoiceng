@@ -102,8 +102,10 @@ body {
     box-sizing: border-box;
     color: #fff;
     height: 400px;
-    background-size: cover;
     background-image: url("http://res.cloudinary.com/domymi7op/image/upload/e_blur:150/myVoice-Background2_qgftna.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 100%;
 }
 
 .minibanner__content {

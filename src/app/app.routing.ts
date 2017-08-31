@@ -1,10 +1,10 @@
-import { Routes, RouterModule } from "@angular/router";
+import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from "./views/home/home.component";
-import { VoiceComponent } from "./views/voice/voice.component";
-import { LoginComponent } from "./views/login/login.component";
-import { FeedsComponent } from "./views/feeds/feeds.component";
-import { ProfileComponent } from "./views/profile/profile.component";
+import { HomeComponent } from './views/home/home.component';
+import { VoiceComponent } from './views/voice/voice.component';
+import { LoginComponent } from './views/login/login.component';
+import { FeedsComponent } from './views/feeds/feeds.component';
+import { ProfileComponent } from './views/profile/profile.component';
 
 
 const appRoutes: Routes = [
