@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Angular2TokenService} from "angular2-token/angular2-token";
+import {Angular2TokenService} from 'angular2-token/angular2-token';
 
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
@@ -22,7 +22,7 @@ export class AuthService {
   ) {
         this.authState = this.afAuth.authState;
         this.authState.subscribe(user => {
-            if(user) {
+            if (user) {
               this.currentUser = user;
               console.log(user);
             } else {
@@ -71,7 +71,7 @@ export class AuthService {
 
 
 
-  register(user:any) {
+  register(user: any) {
     return new Promise((resolve, reject) => {
       this._tokenService.registerAccount(user)
         .subscribe(res => resolve(res), error => reject(error));

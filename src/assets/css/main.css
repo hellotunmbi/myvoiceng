@@ -278,7 +278,9 @@ body {
 
 .voice__title {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #E65100;
     /*padding-bottom: 15px;
     margin-bottom: 10px;*/
 }

@@ -17,6 +17,8 @@ export class VoiceComponent implements OnInit {
 
   result: {};
 
+ loggedInStr = false;
+
   constructor(
     private complaintsService: ComplaintsService,
     private router: Router,
@@ -30,13 +32,15 @@ export class VoiceComponent implements OnInit {
   postComplaint() {
       // console.log(this.voice);
         if (this.authService.isLoggedIn() ) {
+          this.loggedInStr = false;
             this.postRant(this.voice);
             // console.log("yor are logged in: ", this.voice);
         } else {
             // save voice data to localStorage
             localStorage.setItem('current_complaint', JSON.stringify(this.voice));
             // ask me to login
-            this.router.navigate(['login']);
+            this.loggedInStr = true;
+           // this.router.navigate(['login']);
 
             // post my rant
         }
