@@ -235,6 +235,7 @@ body {
     border-bottom: 1px solid rgba(117, 122, 150, 0.27);
     padding-bottom: 15px;
     margin-bottom: 10px;
+    color: #E65100;
 }
 
 .sidebar__complaint_name {
